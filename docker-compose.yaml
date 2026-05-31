@@ -1,7 +1,7 @@
 version: '3'
 services:
   app:
-    image: p31d4/peida_blog
+    image: p31d4/peida_blog:latest
     build:
       context: .
       dockerfile: Dockerfile

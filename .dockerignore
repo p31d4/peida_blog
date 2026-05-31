@@ -1,0 +1,26 @@
+# Build artifacts
+target/
+**/target/
+
+# VCS
+.git
+.gitignore
+.gitattributes
+
+# editor
+*.swp
+
+# Docker
+Dockerfile*
+.dockerignore
+docker-compose*.yaml
+
+# Local env / secrets
+.env
+.env.*
+*.local
+
+# CI
+.github/
+*.md
+LICENSE
