@@ -1,12 +1,16 @@
 [package]
 name = "peida_blog"
 version = "0.1.0"
-edition = "2024"
+authors = ["p31d4"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-tokio = {version = "1", features = ["full"]}
-# Axum
-axum = "0.8.3"
+dioxus = { version = "0.7.1", features = [] }
 
-[dev-dependencies]
-anyhow = "1"
+[features]
+default = ["web"]
+web = ["dioxus/web"]
+desktop = ["dioxus/desktop"]
+mobile = ["dioxus/mobile"]

@@ -1,0 +1,16 @@
+FROM rust:1.96.0
+
+RUN apt update
+RUN apt install -y vim \
+  libwebkit2gtk-4.1-dev \
+  build-essential \
+  libxdo-dev \
+  libayatana-appindicator3-dev \
+  lld
+
+RUN cargo install dioxus-cli --locked
+RUN rustup component add rustfmt
+
+ENV USER=root
+
+WORKDIR /tmp
