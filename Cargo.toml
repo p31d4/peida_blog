@@ -7,7 +7,10 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-dioxus = { version = "0.7.1", features = [] }
+axum = "0.8.9"
+dioxus = { version = "0.7.1", features = ["ssr"] }
+dioxus-ssr = "0.7.9"
+tokio = { version = "1.52.3", features = ["full"] }
 
 [features]
 default = ["web"]
