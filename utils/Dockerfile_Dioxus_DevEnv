@@ -9,8 +9,8 @@ RUN apt install -y vim \
   lld
 
 RUN cargo install dioxus-cli --locked
-RUN rustup component add rustfmt
+RUN rustup component add rustfmt clippy
 
 ENV USER=root
 
-WORKDIR /tmp
+WORKDIR /workspace

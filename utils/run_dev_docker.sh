@@ -15,7 +15,7 @@ run_x_docker() {
         -e DISPLAY=$DISPLAY \
         -v /tmp/.X11-unix:/tmp/.X11-unix \
         -v "$1":${HOME}/git_repos \
-        p31d4/dx_devenv:0.1
+        p31d4/dx_devenv:0.2
 }
 
 run_x_docker $1
